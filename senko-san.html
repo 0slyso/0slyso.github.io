@@ -1,4 +1,5 @@
-<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">@echo off &amp;&amp; Title Senko-San &amp;&amp; chcp 65001 &gt;nul &amp;&amp; setlocal ENABLEDELAYEDEXPANSION
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">
+@echo off && Title Senko-San && chcp 65001 >nul && setlocal ENABLEDELAYEDEXPANSION
 
 set "password=4276"
 set /p "USERPASS=Enter password: "
@@ -10,62 +11,62 @@ if "%USERPASS%"=="%PASSWORD%" (
 )
 :senko-san-full
 
-for /f %%i in ('curl ifconfig.me') do set localIp=%%i &gt;nul &amp;&amp; cls
-echo [97mTHIS IS AN [0m[31mADMIN[0m[97m ONLY SCRIPT[0m &amp;&amp; echo. &amp;&amp; echo [97mTHIS SCRIPT CAN NOT AND WILL NOT FUNCTION WITHOUT [0m[31mADMIN[0m
-echo. &amp;&amp; echo. &amp;&amp; echo. &amp;&amp; echo. &amp;&amp; echo. &amp;&amp; echo. &amp;&amp; echo. &amp;&amp; echo. &amp;&amp; echo. &amp;&amp; echo. &amp;&amp; echo. &amp;&amp; echo. &amp;&amp; echo. &amp;&amp; echo. &amp;&amp; echo. &amp;&amp; echo. &amp;&amp; echo. &amp;&amp; echo. &amp;&amp; echo. &amp;&amp; echo. &amp;&amp; echo ___ &amp;&amp; echo ''._`-.        (^\   &amp;&amp; echo    '-.^;.--.___/ _`^&gt;
-echo       `''( )    , ) &amp;&amp; echo          \\----\^- &amp;&amp; echo    ~~~~~~ "" ~~ """ ~~~~~~~
-net session &gt;nul 2&gt;&amp;1
+for /f %%i in ('curl ifconfig.me') do set localIp=%%i >nul && cls
+echo [97mTHIS IS AN [0m[31mADMIN[0m[97m ONLY SCRIPT[0m && echo. && echo [97mTHIS SCRIPT CAN NOT AND WILL NOT FUNCTION WITHOUT [0m[31mADMIN[0m
+echo. && echo. && echo. && echo. && echo. && echo. && echo. && echo. && echo. && echo. && echo. && echo. && echo. && echo. && echo. && echo. && echo. && echo. && echo. && echo. && echo ___ && echo ''._`-.        (^\   && echo    '-.^;.--.___/ _`^>
+echo       `''( )    , ) && echo          \\----\^- && echo    ~~~~~~ "" ~~ """ ~~~~~~~
+net session >nul 2>&1
 if %errorLevel% == 0 (
-    set Admin=[92mEnabled[0m &amp;&amp; goto GA
+    set Admin=[92mEnabled[0m && goto GA
 ) else (
-    set Admin=[31mDisabled[0m &amp;&amp; goto UACP
+    set Admin=[31mDisabled[0m && goto UACP
 )
 :UACP
-echo Set UAC = CreateObject^("Shell.Application"^) &gt; "%temp%\getadmin.vbs" &amp;&amp; set params = %*:"=""
-echo UAC.ShellExecute "cmd.exe", "/c %~s0 %params%", "", "runas", 1 &gt;&gt; "%temp%\getadmin.vbs"
+echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs" && set params = %*:"=""
+echo UAC.ShellExecute "cmd.exe", "/c %~s0 %params%", "", "runas", 1 >> "%temp%\getadmin.vbs"
 "%temp%\getadmin.vbs"
-del "%temp%\getadmin.vbs" &amp;&amp; exit /B
+del "%temp%\getadmin.vbs" && exit /B
 :GA
-pushd "%CD%" &amp;&amp; CD /D "%~dp0" &amp;&amp; cls
+pushd "%CD%" && CD /D "%~dp0" && cls
 mode 80,20
 :Senko-San
-Title Senko-San &amp;&amp; cls &amp;&amp; set "Pre-Lines=20"
+Title Senko-San && cls && set "Pre-Lines=20"
 echo [97mYour IP Address is:[0m[31m%localIp%[0m    [97mAdmin Privileges^?[0m:%Admin%
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [91m     _____            __              _____              [0m 
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [91m    / ___/___  ____  / /______       / ___/____ _____    [0m  
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [91m    \__ \/ _ \/ __ \/ //_/ __ \______\__ \/ __ `/ __ \   [0m produced by: oslyso
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
-echo [91m   ___/ /  __/ / / / ,^&lt; / /_/ /_____/__/ / /_/ / / / /  [0m     vendetta.rip
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
+echo [91m   ___/ /  __/ / / / ,^< / /_/ /_____/__/ / /_/ / / / /  [0m     vendetta.rip
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [91m  /____/\___/_/ /_/_/^|_^|\____/     /____/\__,_/_/ /_/  [0m
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [0m ________        __ __    __     ___     __  ___   ________   [0m      /^l、     
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [0m/_  __/ / ___   / // ___ / ___  / ___ __/ / / _ ^| /  _/ __ \ [0m      (ﾟ､ ｡7    
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [0m / / / _ / -_) / _  / -_/ / _ \/ _/ // / / / __ ^|_/ // /_/ / [0m        l  ~ヽ   
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [0m/_/ /_//_\__/ /_//_/\__/_/ .__/_/ \_,_/_/ /_/ ^|_/___/\____/  [0m        じしf_)ノ
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [0m                        /_/                                   [0m
-pause &gt;nul
+pause >nul
 echo  ╒[97m1[0m═Network-Tools                       ╒[97m4[0m═CMD
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
-echo  ╘══Geo, Dossing ^&amp; Other IP Stuff       ╘══Prebuilt CMD Lines/Ccripts
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
+echo  ╘══Geo, Dossing ^& Other IP Stuff       ╘══Prebuilt CMD Lines/Ccripts
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo.
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo  ╒[97m2[0m═Installer                           ╒[97m5[0m═Tools
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
-echo  ╘══Discord, Vencord, Winrar/^&amp;Key Etc.. ╘══Multifarious Tools
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
+echo  ╘══Discord, Vencord, Winrar/^&Key Etc.. ╘══Multifarious Tools
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo.
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo  ╒[97m3[0m═Start                               ╒[97m6[0m═MAS              (MASSGRAVE)
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo  ╘══Start Steam Games, Apps, Etc..      ╘══Microsoft-Activation-Scripts
 set /p Senko-San=Type option:
 if "%Senko-San%"=="1" goto Pre-Network-Tools
@@ -81,9 +82,9 @@ for /L %%i in (1,1,%Pre-Lines%) do (
     for /L %%j in (1,1,%%i) do (
         echo.
     )
-    @ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
-	@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
-	@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+    @ping -n 1 -w 1000 0.0.0.1 > NUL 
+	@ping -n 1 -w 1000 0.0.0.1 > NUL 
+	@ping -n 1 -w 1000 0.0.0.1 > NUL 
 )
 goto Senko-San
 :Pre-Network-Tools
@@ -91,9 +92,9 @@ for /L %%i in (1,1,%Pre-Lines%) do (
     for /L %%j in (1,1,%%i) do (
         echo.
     )
-    @ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
-	@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
-	@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+    @ping -n 1 -w 1000 0.0.0.1 > NUL 
+	@ping -n 1 -w 1000 0.0.0.1 > NUL 
+	@ping -n 1 -w 1000 0.0.0.1 > NUL 
 )
 goto Network-Tools
 :Pre-Installer
@@ -101,9 +102,9 @@ for /L %%i in (1,1,%Pre-Lines%) do (
     for /L %%j in (1,1,%%i) do (
         echo.
     )
-    @ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
-	@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
-	@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+    @ping -n 1 -w 1000 0.0.0.1 > NUL 
+	@ping -n 1 -w 1000 0.0.0.1 > NUL 
+	@ping -n 1 -w 1000 0.0.0.1 > NUL 
 )
 goto Installer
 :Pre-Start
@@ -111,9 +112,9 @@ for /L %%i in (1,1,%Pre-Lines%) do (
     for /L %%j in (1,1,%%i) do (
         echo.
     )
-    @ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
-	@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
-	@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+    @ping -n 1 -w 1000 0.0.0.1 > NUL 
+	@ping -n 1 -w 1000 0.0.0.1 > NUL 
+	@ping -n 1 -w 1000 0.0.0.1 > NUL 
 )
 goto Start
 :Pre-CMD
@@ -121,9 +122,9 @@ for /L %%i in (1,1,%Pre-Lines%) do (
     for /L %%j in (1,1,%%i) do (
         echo.
     )
-    @ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
-	@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
-	@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+    @ping -n 1 -w 1000 0.0.0.1 > NUL 
+	@ping -n 1 -w 1000 0.0.0.1 > NUL 
+	@ping -n 1 -w 1000 0.0.0.1 > NUL 
 )
 goto CMD
 :Pre-Tools
@@ -131,9 +132,9 @@ for /L %%i in (1,1,%Pre-Lines%) do (
     for /L %%j in (1,1,%%i) do (
         echo.
     )
-    @ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
-	@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
-	@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+    @ping -n 1 -w 1000 0.0.0.1 > NUL 
+	@ping -n 1 -w 1000 0.0.0.1 > NUL 
+	@ping -n 1 -w 1000 0.0.0.1 > NUL 
 )
 goto Tools
 :Pre-MAS
@@ -141,49 +142,49 @@ for /L %%i in (1,1,%Pre-Lines%) do (
     for /L %%j in (1,1,%%i) do (
         echo.
     )
-    @ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
-	@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
-	@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+    @ping -n 1 -w 1000 0.0.0.1 > NUL 
+	@ping -n 1 -w 1000 0.0.0.1 > NUL 
+	@ping -n 1 -w 1000 0.0.0.1 > NUL 
 )
 goto MAS
 
 
 :Network-Tools
-Title Senko-San^&gt;Network-Tools &amp;&amp; cls
+Title Senko-San^>Network-Tools && cls
 echo [97mYour IP Address is:[0m[31m%localIp%[0m    [97mAdmin Privileges^?[0m:%Admin%
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [91m     _____            __              _____              [0m 
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [91m    / ___/___  ____  / /______       / ___/____ _____    [0m  
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [91m    \__ \/ _ \/ __ \/ //_/ __ \______\__ \/ __ `/ __ \   [0m produced by: Xlf
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
-echo [91m   ___/ /  __/ / / / ,^&lt; / /_/ /_____/__/ / /_/ / / / /  [0mhttps://feds.lol/xlf
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
+echo [91m   ___/ /  __/ / / / ,^< / /_/ /_____/__/ / /_/ / / / /  [0mhttps://feds.lol/xlf
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [91m  /____/\___/_/ /_/_/^|_^|\____/     /____/\__,_/_/ /_/  [0m
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [0m   _  __    __                  __     __           __   [0m
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [0m  / ^|/ ___ / /__    _____  ____/ /__  / /____ ___  / ___ [0m
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
-echo [0m /    / -_/ __^| ^|/^|/ / _ \/ __/  '_/ / __/ _ / _ \/ (_-^&lt; [0m
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
+echo [0m /    / -_/ __^| ^|/^|/ / _ \/ __/  '_/ / __/ _ / _ \/ (_-^< [0m
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [0m/_/^|_/\__/\__/^|__,__/\___/_/ /_/\_\  \__/\___\___/_/___/ [0m  
-timeout /t 1 &gt;nul
+timeout /t 1 >nul
 echo  ╒[97m1[0m═Geolocate                           ╒[97m4[0m═Trace Mac Address
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo  ╘══Geolocate An IP                     ╘══IPv4 To Mac Address
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo.
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo  ╒[97m2[0m═Pinger                              ╒[97m5[0m═Trace DNS  
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo  ╘══Lag/Switch Detection/Length         ╘══DNS
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo.
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo  ╒[97m3[0m═NetStat                             ╒[97m6[0m═Senko-San
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo  ╘══Runs NetStat                        ╘══Returns To The Main Menu
 set /p Network-Tools=Type option:
 if "%Network-Tools%"=="1" goto geolocate
@@ -197,14 +198,14 @@ exit
 ::Error script
 
 :geolocate
-cls &amp;&amp; echo. &amp;&amp; set /p ip=IP Address: &amp;&amp; cls
+cls && echo. && set /p ip=IP Address: && cls
 set webclient=webclient
-if exist "%temp%\%webclient%.vbs" del "%temp%\%webclient%.vbs" /f /q /s &gt;nul
-if exist "%temp%\response.txt" del "%temp%\response.txt" /f /q /s &gt;nul
+if exist "%temp%\%webclient%.vbs" del "%temp%\%webclient%.vbs" /f /q /s >nul
+if exist "%temp%\response.txt" del "%temp%\response.txt" /f /q /s >nul
 :iplookup
-echo sUrl = "http://ipinfo.io/%ip%/json" &gt; %temp%\%webclient%.vbs
+echo sUrl = "http://ipinfo.io/%ip%/json" > %temp%\%webclient%.vbs
 :localip
-cls &amp;&amp; echo set oHTTP = CreateObject("MSXML2.ServerXMLHTTP.6.0") &gt;&gt; %temp%\%webclient%.vbs &amp;&amp; echo oHTTP.open "GET", sUrl,false &gt;&gt; %temp%\%webclient%.vbs &amp;&amp; echo oHTTP.setRequestHeader "Content-Type", "application/x-www-form-urlencoded" &gt;&gt; %temp%\%webclient%.vbs &amp;&amp; echo oHTTP.setRequestHeader "Content-Length", Len(sRequest) &gt;&gt; %temp%\%webclient%.vbs &amp;&amp; echo oHTTP.send sRequest &gt;&gt; %temp%\%webclient%.vbs &amp;&amp; echo HTTPGET = oHTTP.responseText &gt;&gt; %temp%\%webclient%.vbs &amp;&amp; echo strDirectory = "%temp%\response.txt" &gt;&gt; %temp%\%webclient%.vbs &amp;&amp; echo set objFSO = CreateObject("Scripting.FileSystemObject") &gt;&gt; %temp%\%webclient%.vbs &amp;&amp; echo set objFile = objFSO.CreateTextFile(strDirectory) &gt;&gt; %temp%\%webclient%.vbs &amp;&amp; echo objFile.Write(HTTPGET) &gt;&gt; %temp%\%webclient%.vbs &amp;&amp; echo objFile.Close &gt;&gt; %temp%\%webclient%.vbs &amp;&amp; echo Wscript.Quit &gt;&gt; %temp%\%webclient%.vbs
+cls && echo set oHTTP = CreateObject("MSXML2.ServerXMLHTTP.6.0") >> %temp%\%webclient%.vbs && echo oHTTP.open "GET", sUrl,false >> %temp%\%webclient%.vbs && echo oHTTP.setRequestHeader "Content-Type", "application/x-www-form-urlencoded" >> %temp%\%webclient%.vbs && echo oHTTP.setRequestHeader "Content-Length", Len(sRequest) >> %temp%\%webclient%.vbs && echo oHTTP.send sRequest >> %temp%\%webclient%.vbs && echo HTTPGET = oHTTP.responseText >> %temp%\%webclient%.vbs && echo strDirectory = "%temp%\response.txt" >> %temp%\%webclient%.vbs && echo set objFSO = CreateObject("Scripting.FileSystemObject") >> %temp%\%webclient%.vbs && echo set objFile = objFSO.CreateTextFile(strDirectory) >> %temp%\%webclient%.vbs && echo objFile.Write(HTTPGET) >> %temp%\%webclient%.vbs && echo objFile.Close >> %temp%\%webclient%.vbs && echo Wscript.Quit >> %temp%\%webclient%.vbs
 start %temp%\%webclient%.vbs
 set /a requests=0
 :checkresponseexists
@@ -213,33 +214,33 @@ if %requests% gtr 7 goto failed
 IF EXIST "%temp%\response.txt" (
 goto response_exist
 ) ELSE (
-ping 127.0.0.1 -n 2 -w 1000 &gt;nul &amp;&amp; goto checkresponseexists
+ping 127.0.0.1 -n 2 -w 1000 >nul && goto checkresponseexists
 )
 :failed
-taskkill /f /im wscript.exe &gt;nul
-del "%temp%\%webclient%.vbs" /f /q /s &gt;nul
-echo. &amp;&amp; echo Did not receive a response from the API. &amp;&amp; echo. &amp;&amp; pause &amp;&amp; goto Senko-San
+taskkill /f /im wscript.exe >nul
+del "%temp%\%webclient%.vbs" /f /q /s >nul
+echo. && echo Did not receive a response from the API. && echo. && pause && goto Senko-San
 :response_exist
-cls &amp;&amp; echo. &amp;&amp; for /f "delims=     " %%i in ('findstr /i "," %temp%\response.txt') do (
-    set data=%%i &amp;&amp; set data=!data:,=! &amp;&amp; set data=!data:""=Not Listed! &amp;&amp; set data=!data:"=!
-	set data=!data:ip:=IP:         ! &amp;&amp; set data=!data:hostname:=Hostname:   ! &amp;&amp; set data=!data:org:=ISP:        ! &amp;&amp; set data=!data:city:=City:       ! &amp;&amp; set data=!data:region:=State:      ! &amp;&amp; set data=!data:country:=Country:    ! &amp;&amp; set data=!data:postal:=Postal:     ! &amp;&amp; set data=!data:loc:=Location:   ! &amp;&amp; set data=!data:timezone:=Timezone:   !
+cls && echo. && for /f "delims=     " %%i in ('findstr /i "," %temp%\response.txt') do (
+    set data=%%i && set data=!data:,=! && set data=!data:""=Not Listed! && set data=!data:"=!
+	set data=!data:ip:=IP:         ! && set data=!data:hostname:=Hostname:   ! && set data=!data:org:=ISP:        ! && set data=!data:city:=City:       ! && set data=!data:region:=State:      ! && set data=!data:country:=Country:    ! && set data=!data:postal:=Postal:     ! && set data=!data:loc:=Location:   ! && set data=!data:timezone:=Timezone:   !
     echo !data!
 )
 echo.
-del "%temp%\%webclient%.vbs" /f /q /s &gt;nul
-del "%temp%\response.txt" /f /q /s &gt;nul
+del "%temp%\%webclient%.vbs" /f /q /s >nul
+del "%temp%\response.txt" /f /q /s >nul
 if '%ip%'=='' goto Senko-San
-pause &gt;nul &amp;&amp; goto Senko-San
+pause >nul && goto Senko-San
 :Pinger
-cls &amp;&amp; set Connected=0 &amp;&amp; set Failed=0
+cls && set Connected=0 && set Failed=0
 :pingloop
-ping -n 1 www.google.com &gt; nul
+ping -n 1 www.google.com > nul
 if %errorlevel% equ 0 (
-    set /a Hit+=1 &amp;&amp; echo [97mConnected:[0m[92m%Connected%[0m
+    set /a Hit+=1 && echo [97mConnected:[0m[92m%Connected%[0m
 ) else (
-    set /a Miss+=1 &amp;&amp; echo [97mFailed:[0m[91m%Failed%[0m
+    set /a Miss+=1 && echo [97mFailed:[0m[91m%Failed%[0m
 )
-timeout 1 /nobreak &gt; nul &amp;&amp; goto pingloop
+timeout 1 /nobreak > nul && goto pingloop
 :NetStat
 cls
 netstat -a
@@ -249,56 +250,56 @@ netstat -o
 netstat -p
 netstat -s
 netstat -r
-pause &gt; nul &amp;&amp; goto Senko-San
+pause > nul && goto Senko-San
 :Trace-Mac-Address
-cls&amp;&amp; echo.
+cls&& echo.
 set /p ip=Enter IPv4 Address: 
-ping -w 1 %ip% &gt;nul
+ping -w 1 %ip% >nul
 for /f "tokens=2 delims= " %%a in ('arp -a ^| find "%ip%"') do set macaddr=%%a
 for /f "usebackq delims=" %%I in (`powershell "\"%macaddr%\".toUpper()"`) do set "upper=%%~I"
-cls &amp;&amp; echo. &amp;&amp; echo Mac Address: %upper% &amp;&amp; pause &gt;nul &amp;&amp; exit
+cls && echo. && echo Mac Address: %upper% && pause >nul && exit
 :Trace-DNS
-cls &amp;&amp; echo. &amp;&amp; set /p ip=IP Address: &amp;&amp; cls
+cls && echo. && set /p ip=IP Address: && cls
 for /f "tokens=2 delims= " %%a in ('nslookup %ip% ^| find "Name"') do set dns=%%a
 echo.
 echo Domain Name: %dns%
-pause &gt;nul &amp;&amp; goto Senko-San
+pause >nul && goto Senko-San
 :DDOS
 cls
 echo [97mYour IP Address is:[0m[31m%localIp%[0m    [97mAdmin Privileges^?[0m:%Admin%
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [91m     _____            __              _____              [0m 
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [91m    / ___/___  ____  / /______       / ___/____ _____    [0m  
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [91m    \__ \/ _ \/ __ \/ //_/ __ \______\__ \/ __ `/ __ \   [0m produced by: Xlf
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
-echo [91m   ___/ /  __/ / / / ,^&lt; / /_/ /_____/__/ / /_/ / / / /  [0mhttps://feds.lol/xlf
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
+echo [91m   ___/ /  __/ / / / ,^< / /_/ /_____/__/ / /_/ / / / /  [0mhttps://feds.lol/xlf
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [91m  /____/\___/_/ /_/_/^|_^|\____/     /____/\__,_/_/ /_/  [0m
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [0m       ___  ___  ____  ____  ___               __[0m
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [0m      / _ \/ _ \/ __ \/ __/ / _ \___ ____ ___ / /[0m
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [0m     / // / // / /_/ _\ \  / ___/ _ `/ _ / -_/ / [0m
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [0m    /____/____/\____/___/ /_/   \_,_/_//_\__/_/  [0m
-timeout /t 1 &gt;nul
+timeout /t 1 >nul
 echo  ╒1═freestresser.so                     ╒4═str3ssed.co
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo  ╘══(ERR_CONNECTION_REFUSED)            ╘══(ERR_CONNECTION_REFUSED)
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo.
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo  ╒2═hardstresser.com                    ╒5═projectdeltastress.com
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo  ╘══untested                            ╘══(ERR_CONNECTION_REFUSED)
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo.
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo  ╒3═stresser.net                        ╒6═Senko-San
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo  ╘══Seized by FBI                       ╘══Returns To The Main Menu
 set /p DDOS=Type option:
 if "%DDOS%"=="1" start https://freestresser.so/
@@ -312,41 +313,41 @@ exit
 
 
 :Installer
-Title Senko-San^&gt;Installer &amp;&amp; cls
+Title Senko-San^>Installer && cls
 echo [97mYour IP Address is:[0m[31m%localIp%[0m    [97mAdmin Privileges^?[0m:%Admin%
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [91m     _____            __              _____              [0m 
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [91m    / ___/___  ____  / /______       / ___/____ _____    [0m  
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [91m    \__ \/ _ \/ __ \/ //_/ __ \______\__ \/ __ `/ __ \   [0m produced by: Xlf
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
-echo [91m   ___/ /  __/ / / / ,^&lt; / /_/ /_____/__/ / /_/ / / / /  [0mhttps://feds.lol/xlf
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
+echo [91m   ___/ /  __/ / / / ,^< / /_/ /_____/__/ / /_/ / / / /  [0mhttps://feds.lol/xlf
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [91m  /____/\___/_/ /_/_/^|_^|\____/     /____/\__,_/_/ /_/  [0m
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [0m      ____        __       ____       [0m
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [0m     /  ____  ___/ /____ _/ / ___ ____[0m
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [0m    _/ // _ \(_-/ __/ _ `/ / / -_/ __/[0m
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [0m   /___/_//_/___\__/\_,_/_/_/\__/_/   [0m
-timeout /t 1 &gt;nul
+timeout /t 1 >nul
 echo  ╒[97m1[0m═[94mDiscord[0m                             ╒[97m4═Game-Software[0m
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo  ╘══[97m1[90m.[0m[94mDiscord[0m [97m2[90m.[0m[95mVencord[0m [97m3[90m.[0m[94mBetterDiscord[0m ╘══[97m1[90m.[0m[90mEpic[0m [97m2[90m.[0m[94mSteam[0m [97m3[90m.[0m[94mUbisoft[0m [97m4[90m.[0m[93mRockstar[0m
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo.
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo  ╒[97m2[0m═[92mSpotify[0m                             ╒[97m5═Extra[0m
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo  ╘══[97m1[90m.[0m[92mSpotify[0m [97m2[90m.[0m[93mSpicetify[0m [97m3[90m.[0m[90mRemove WinS[0m ╘══[97m1[90m.[0m[90mFxSound[0m [97m2[90m.[0m[92mVoiceMod[0m [97m3[90m.[0m[91mOperaGX[0m
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo.
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo  ╒[97m3[0m═[91mWinRAR[0m                              ╒[97m6[0m═[91mSenko-San[0m
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo  ╘══[97m1[90m.[0m[91mWinRAR[0m [97m2[90m.[0m[90mWinRAR key[0m               ╘══[97mReturns To The Main Menu[0m
 set /p Installer=Option one:
 if "%Installer%"=="1" goto Discord
@@ -368,32 +369,32 @@ if "%DiscordInstaller%"=="3" goto BetterDiscord
 :Vencord
 set Senko-Vencord=#E1qkjkD5#MwaEYWCUnnJY8g1$Skboe$.ps1
 (
-  echo iwr "https://raw.githubusercontent.com/Vencord/Installer/main/install.ps1" -UseBasicParsing ^| iex &amp;&amp; echo # &amp;&amp; echo cls &amp;&amp; echo # &amp;&amp; echo Remove-Item -Path $MyInvocation.MyCommand.Source ^| iex
-) &gt; %Senko-Vencord%
-echo File "%Senko-Vencord%" created with the following content: &amp;&amp; type %Senko-Vencord% &amp;&amp; cls
-timeout /t 2 /nobreak &gt;nul
+  echo iwr "https://raw.githubusercontent.com/Vencord/Installer/main/install.ps1" -UseBasicParsing ^| iex && echo # && echo cls && echo # && echo Remove-Item -Path $MyInvocation.MyCommand.Source ^| iex
+) > %Senko-Vencord%
+echo File "%Senko-Vencord%" created with the following content: && type %Senko-Vencord% && cls
+timeout /t 2 /nobreak >nul
 powershell.exe -ExecutionPolicy Bypass -File #E1qkjkD5#MwaEYWCUnnJY8g1$Skboe$.ps1
 exit
 :BetterDiscord
-set InstallerURL=https://github.com/BetterDiscord/Installer/releases/latest/download/BetterDiscord-Windows.exe &amp;&amp; set InstallerName=BetterDiscord-Installer.exe &amp;&amp; cls &amp;&amp; echo [97mDownloading BetterDiscord...[0m
+set InstallerURL=https://github.com/BetterDiscord/Installer/releases/latest/download/BetterDiscord-Windows.exe && set InstallerName=BetterDiscord-Installer.exe && cls && echo [97mDownloading BetterDiscord...[0m
 curl -o %InstallerName% -L %InstallerURL%
-echo [97mInstalling BetterDiscord...[0m &amp;&amp; start /wait %InstallerName% &amp;&amp; del %InstallerName% &amp;&amp; exit
+echo [97mInstalling BetterDiscord...[0m && start /wait %InstallerName% && del %InstallerName% && exit
 :Spotify
 set /p SpotifyInstaller=Option two:
 if "%SpotifyInstaller%"=="1" goto Install-Spotify
 if "%SpotifyInstaller%"=="2" goto Spicetify
 if "%SpotifyInstaller%"=="2" goto Remove-Windows-Spotify
 :Install-Spotify
-set InstallerURL=https://download.scdn.co/SpotifySetup.exe &amp;&amp; set InstallerName=SpotifySetup.exe &amp;&amp; cls &amp;&amp; echo [97mDownloading SpotifySetup.exe...[0m
+set InstallerURL=https://download.scdn.co/SpotifySetup.exe && set InstallerName=SpotifySetup.exe && cls && echo [97mDownloading SpotifySetup.exe...[0m
 curl -o %InstallerName% -L %InstallerURL%
-echo [97mInstalling Spotify...[0m &amp;&amp; start /wait %InstallerName% &amp;&amp; del %InstallerName% &amp;&amp; exit
+echo [97mInstalling Spotify...[0m && start /wait %InstallerName% && del %InstallerName% && exit
 :Spicetify
-cls &amp;&amp; set Install-Spicetify=#JY8g1$Skboe$#E1qkjkD5#MwaEYWCUnn.ps1
+cls && set Install-Spicetify=#JY8g1$Skboe$#E1qkjkD5#MwaEYWCUnn.ps1
 (
-  echo iwr -useb https://raw.githubusercontent.com/spicetify/spicetify-cli/master/install.ps1 ^| iex &amp;&amp; echo # &amp;&amp; echo iwr -useb https://raw.githubusercontent.com/spicetify/spicetify-marketplace/main/resources/install.ps1 ^| iex &amp;&amp; echo cls &amp;&amp; echo Remove-Item -Path $MyInvocation.MyCommand.Source ^| iex
-) &gt; %Install-Spicetify%
-echo File "%Install-Spicetify%" created with the following content: &amp;&amp; type %Install-Spicetify% &amp;&amp; cls
-timeout /t 2 /nobreak &gt;nul
+  echo iwr -useb https://raw.githubusercontent.com/spicetify/spicetify-cli/master/install.ps1 ^| iex && echo # && echo iwr -useb https://raw.githubusercontent.com/spicetify/spicetify-marketplace/main/resources/install.ps1 ^| iex && echo cls && echo Remove-Item -Path $MyInvocation.MyCommand.Source ^| iex
+) > %Install-Spicetify%
+echo File "%Install-Spicetify%" created with the following content: && type %Install-Spicetify% && cls
+timeout /t 2 /nobreak >nul
 powershell.exe -ExecutionPolicy Bypass -File #JY8g1$Skboe$#E1qkjkD5#MwaEYWCUnn.ps1
 exit
 :Remove-Windows-Spotify
@@ -407,9 +408,9 @@ set /p WinRARInstaller=Option two:
 if "%WinRARInstaller%"=="1" goto Install-WinRAR
 if "%WinRARInstaller%"=="2" goto WinRAR-key
 :Install-WinRAR
-set InstallerURL=https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-624.exe &amp;&amp; set InstallerName=winrar-x64-624.exe &amp;&amp; cls &amp;&amp; echo [97mDownloading winrar-x64-624.exe...[90m
+set InstallerURL=https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-624.exe && set InstallerName=winrar-x64-624.exe && cls && echo [97mDownloading winrar-x64-624.exe...[90m
 curl -o %InstallerName% -L %InstallerURL%
-echo [97mInstalling WinRAR...[0m &amp;&amp; start /wait %InstallerName% &amp;&amp; del %InstallerName% &amp;&amp; exit
+echo [97mInstalling WinRAR...[0m && start /wait %InstallerName% && del %InstallerName% && exit
 :WinRAR-key
 cls
 if exist "C:\Program Files\WinRAR" (
@@ -425,13 +426,13 @@ if exist "C:\Program Files\WinRAR" (
   echo 982fbe71e93df6b6346c37a3890f3c7edc65d7f5455470d13d1190
   echo 6e6fb824bcf25f155547b5fc41901ad58c0992f570be1cf5608ba9
   echo aef69d48c864bcd72d15163897773d314187f6a9af350808719796
-) &gt; "C:\Program Files\WinRAR\rarreg.key "
+) > "C:\Program Files\WinRAR\rarreg.key "
 echo WinRAR is now fully unlocked enjoy!
-timeout /t 2 &gt;nul
+timeout /t 2 >nul
 goto Senko-San
 ) else (
     echo [97mSorry but WinRAR isn't getting detected are you sure you have it installed?[0m
-	timeout /t 2 &gt;nul
+	timeout /t 2 >nul
 	goto Installer
 )
 
@@ -458,42 +459,42 @@ if "%Extra%"=="3" goto OperaGx
 
 
 :Start
-Title Senko-San^&gt;Start &amp;&amp; cls
+Title Senko-San^>Start && cls
 echo [97mYour IP Address is:[0m[31m%localIp%[0m    [97mAdmin Privileges^?[0m:%Admin%
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [91m     _____            __              _____              [0m 
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [91m    / ___/___  ____  / /______       / ___/____ _____    [0m  
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [91m    \__ \/ _ \/ __ \/ //_/ __ \______\__ \/ __ `/ __ \   [0m produced by: Xlf
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
-echo [91m   ___/ /  __/ / / / ,^&lt; / /_/ /_____/__/ / /_/ / / / /  [0mhttps://feds.lol/xlf
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
+echo [91m   ___/ /  __/ / / / ,^< / /_/ /_____/__/ / /_/ / / / /  [0mhttps://feds.lol/xlf
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [91m  /____/\___/_/ /_/_/^|_^|\____/     /____/\__,_/_/ /_/  [0m
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [0m   ______           __ 
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [0m  / __/ /____ _____/ /_
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [0m _\ \/ __/ _ `/ __/ __/
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [0m/___/\__/\_,_/_/  \__/ 
-timeout /t 1 &gt;nul
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+timeout /t 1 >nul
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo  ╒[97m1[0m═VR-Startup               ╒[97m4[0m═
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo  ╘══Connect Headset First       ╘══
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo.
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo  ╒[97m2[0m═                           ╒[97m5[0m═
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo  ╘══                                ╘══
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo.
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo  ╒[97m3[0m═                               ╒[97m6[0m═[91mSenko-San[0m
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo  ╘══      ╘══[97mReturns To The Main Menu[0m
 set /p Start=Type option:
 if "%Start%"=="1" goto VR-Startup
@@ -508,10 +509,10 @@ exit
 :VR-Startup
 echo SteamVR Starting...
 start steam://rungameid/250820
-timeout /t 1 &gt;nul
+timeout /t 1 >nul
 echo OVR Advanced Settings Starting...
 start steam://rungameid/1009850
-timeout /t 1 &gt;nul
+timeout /t 1 >nul
 echo XSOverlay Starting...
 start steam://rungameid/1173510
 ::Remove on release.
@@ -531,48 +532,48 @@ cls
 
 
 :CMD
-Title Senko-San^&gt;CMD &amp;&amp; cls
+Title Senko-San^>CMD && cls
 
 pause
 
 
 :Tools
-Title Senko-San^&gt;Tools &amp;&amp; cls
+Title Senko-San^>Tools && cls
 echo [97mYour IP Address is:[0m[31m%localIp%[0m    [97mAdmin Privileges^?[0m:%Admin%
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [91m     _____            __              _____              [0m 
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [91m    / ___/___  ____  / /______       / ___/____ _____    [0m  
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [91m    \__ \/ _ \/ __ \/ //_/ __ \______\__ \/ __ `/ __ \   [0m produced by: Xlf
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
-echo [91m   ___/ /  __/ / / / ,^&lt; / /_/ /_____/__/ / /_/ / / / /  [0mhttps://feds.lol/xlf
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
+echo [91m   ___/ /  __/ / / / ,^< / /_/ /_____/__/ / /_/ / / / /  [0mhttps://feds.lol/xlf
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [91m  /____/\___/_/ /_/_/^|_^|\____/     /____/\__,_/_/ /_/  [0m
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [0m ______         __  
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [0m/_  _____ ___  / ___
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
-echo [0m / / / _ / _ \/ (_-^&lt;
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
+echo [0m / / / _ / _ \/ (_-^<
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [0m/_/  \___\___/_/___/
-timeout /t 1 &gt;nul
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+timeout /t 1 >nul
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo  ╒[97m1[0m═Discord Webhook Sender              ╒[97m4[0m═
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo  ╘══A simple Webhook data sender                      ╘══
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo.
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo  ╒[97m2[0m═                           ╒[97m5[0m═
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo  ╘══                                ╘══
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo.
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo  ╒[97m3[0m═                               ╒[97m6[0m═[91mSenko-San[0m
-@ping -n 1 -w 1000 0.0.0.1 &gt; NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo  ╘══      ╘══[97mReturns To The Main Menu[0m
 set /p Start=Type option:
 if "%Start%"=="1" goto Discord-Webhook
@@ -598,13 +599,14 @@ pause
 
 
 :MAS
-Title Senko-San^&gt;MAS &amp;&amp; cls
-cls &amp;&amp; set Install-Spicetify=#MwaEYWCUnn#E1qkjkD5#JY8g1$Skboe$.ps1
+Title Senko-San^>MAS && cls
+cls && set Install-Spicetify=#MwaEYWCUnn#E1qkjkD5#JY8g1$Skboe$.ps1
 (
-  echo irm https://massgrave.dev/get ^| iex &amp;&amp; echo # &amp;&amp; echo cls &amp;&amp; echo Remove-Item -Path $MyInvocation.MyCommand.Source ^| iex
-) &gt; %Install-Spicetify%
-echo File "%Install-Spicetify%" created with the following content: &amp;&amp; type %Install-Spicetify% &amp;&amp; cls
-timeout /t 2 /nobreak &gt;nul
+  echo irm https://massgrave.dev/get ^| iex && echo # && echo cls && echo Remove-Item -Path $MyInvocation.MyCommand.Source ^| iex
+) > %Install-Spicetify%
+echo File "%Install-Spicetify%" created with the following content: && type %Install-Spicetify% && cls
+timeout /t 2 /nobreak >nul
 powershell.exe -ExecutionPolicy Bypass -File #MwaEYWCUnn#E1qkjkD5#JY8g1$Skboe$.ps1
 exit
+pause
 pause</pre></body></html>
