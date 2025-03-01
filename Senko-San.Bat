@@ -1,4 +1,15 @@
 @echo off && Title Senko-San && chcp 65001 >nul && setlocal ENABLEDELAYEDEXPANSION
+
+set "password=4276"
+set /p "USERPASS=Enter password: "
+if "%USERPASS%"=="%PASSWORD%" (
+    goto senko-san-full
+) else (
+    echo Access denied.
+    exit /b
+)
+:senko-san-full
+
 for /f %%i in ('curl ifconfig.me') do set localIp=%%i >nul && cls
 echo [97mTHIS IS AN [0m[31mADMIN[0m[97m ONLY SCRIPT[0m && echo. && echo [97mTHIS SCRIPT CAN NOT AND WILL NOT FUNCTION WITHOUT [0m[31mADMIN[0m
 echo. && echo. && echo. && echo. && echo. && echo. && echo. && echo. && echo. && echo. && echo. && echo. && echo. && echo. && echo. && echo. && echo. && echo. && echo. && echo. && echo ___ && echo ''._`-.        (^\   && echo    '-.^;.--.___/ _`^>
@@ -25,9 +36,9 @@ echo [91m     _____            __              _____              [0m
 @ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [91m    / ___/___  ____  / /______       / ___/____ _____    [0m  
 @ping -n 1 -w 1000 0.0.0.1 > NUL 
-echo [91m    \__ \/ _ \/ __ \/ //_/ __ \______\__ \/ __ `/ __ \   [0m produced by: Xlf
+echo [91m    \__ \/ _ \/ __ \/ //_/ __ \______\__ \/ __ `/ __ \   [0m produced by: oslyso
 @ping -n 1 -w 1000 0.0.0.1 > NUL 
-echo [91m   ___/ /  __/ / / / ,^< / /_/ /_____/__/ / /_/ / / / /  [0mhttps://feds.lol/xlf
+echo [91m   ___/ /  __/ / / / ,^< / /_/ /_____/__/ / /_/ / / / /  [0m     vendetta.rip
 @ping -n 1 -w 1000 0.0.0.1 > NUL 
 echo [91m  /____/\___/_/ /_/_/^|_^|\____/     /____/\__,_/_/ /_/  [0m
 @ping -n 1 -w 1000 0.0.0.1 > NUL 
